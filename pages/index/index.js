@@ -126,7 +126,7 @@ Page({
       hourlyWeather.push({
         time: (i * 3 + nowHour) % 24 + '时',
         iconPath: '/images/' + result.now.cond_code + '-icon.png',
-        temp: result + '°'
+        temp: result.now.tmp + '°'
       })
     }
     hourlyWeather[0].time = '现在'
