@@ -40,6 +40,7 @@ Page({
         iconPath: '/images/' + result.daily_forecast[i].cond_code_d + '-icon.png'
       })
     }
+    weekWeather[0].date = '今天'
     this.setData({
       weekWeather
     })
