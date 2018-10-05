@@ -2,12 +2,18 @@
   <view class="temp">{{nowTemp}}</view>
   <view class="weather">{{nowWeather}}</view>
   <image class="weather-bg" src="{{nowWeatherBackground}}" mode="scaleToFill"></image>
+  <view class='day-weather' bindtap='onTapDayWeather'>
+    <view class='day-text'>{{todayDate}}</view>
+    <view class='wind-text'>{{todayWind}}</view>
+    <image class='arrow-icon' src='/images/arrow.png'></image>
+  </view>
 </view>
+
 <view class="timetips">
   <image class="timetips-icon" src="/images/time-icon.png"></image>
   <view class="timetips-text">未来24小时天气预测</view>
- </view>
-
+</view>
+ 
 <scroll-view scroll-x>
   <view class='forecast-list'>
     <view class='forecast-item' wx:for="{{hourlyWeather}}">

@@ -73,7 +73,9 @@ Page({
     nowTemp: '0°',
     nowWeather: '晴',
     nowWeatherBackground: "",
-    hourlyWeather: []
+    hourlyWeather: [],
+    todayTemp: "",
+    todayDate: ""
   },
   onLoad() {
     this.getNow()
@@ -87,7 +89,7 @@ Page({
     wx.request({
       url: 'https://free-api.heweather.com/s6/weather/now',
       data: {
-        location: '西安',
+        location: 'shanghai',
         key: '11e895a6b3854f0fb49508eea65df6ca'
       },
       success: res => {
@@ -95,6 +97,7 @@ Page({
         let result = res.data.HeWeather6["0"]
         this.setNow(result)
         this.setHourlyWeather(result)
+        this.setToday(result)
       },
       complete: ()=>{
         callback && callback()
@@ -123,12 +126,24 @@ Page({
       hourlyWeather.push({
         time: (i * 3 + nowHour) % 24 + '时',
         iconPath: '/images/' + result.now.cond_code + '-icon.png',
-        temp: result.now.tmp + '°'
+        temp: result + '°'
       })
     }
     hourlyWeather[0].time = '现在'
     this.setData({
       hourlyWeather: hourlyWeather
+    })
+  },
+  setToday(result) {
+    let date = new Date()
+    this.setData({
+      todayWind: `${result.now.wind_dir} 风速 ${result.now.wind_spd} km/h`,
+      todayDate: `最新 :${result.update.loc}`
+    })
+  },
+  onTapDayWeather() {
+    wx.navigateTo({
+      url: '/pages/list/list',
     })
   }
 })

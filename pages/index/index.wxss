@@ -1,3 +1,4 @@
+/*Main Background*/
 .temp {
   text-align:center;
   font-size: 200rpx;
@@ -40,6 +41,8 @@
   line-height: 42rpx;
   opacity: 0.5;
 }
+
+/*Forecast List*/
 .forecast-list {
     display:flex;
 }
@@ -63,4 +66,33 @@
   margin-top: 46rpx;
   font-size: 40rpx;
   line-height: 56rpx;
+}
+
+/*Second Page*/
+.day-weather {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 40rpx;
+  right: 40rpx;
+  height: 90rpx;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 30rpx;
+  line-height: 42rpx;
+  opacity: 0.5;
+}
+.day-text {
+  flex-grow: 1;
+  padding-left: 12rpx;
+  text-align: left;
+}
+.wind-text {
+  flex-grow: 1;
+  padding-right: 12rpx;
+  text-align: right;
+}
+.arrow-icon {
+  width: 13rpx;
+  height: 24rpx;
 }
