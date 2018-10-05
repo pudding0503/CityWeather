@@ -72,15 +72,16 @@ Page({
   data: {
     nowTemp: '0°',
     nowWeather: '晴',
-    nowWeatherBackground: ""
-  },
-  onPullDownRefresh() {
-    this.getNow(()=> {
-      wx.stopPullDownRefresh()
-    })
+    nowWeatherBackground: "",
+    hourlyWeather: []
   },
   onLoad() {
     this.getNow()
+  },
+  onPullDownRefresh() {
+    this.getNow(() => {
+      wx.stopPullDownRefresh()
+    })
   },
   getNow(callback) {
     wx.request({
@@ -92,23 +93,42 @@ Page({
       success: res => {
         console.log(res)
         let result = res.data.HeWeather6["0"]
-        let temp = result.now.tmp
-        let weather = result.now.cond_txt
-        let weatherCode = result.now.cond_code
-        console.log(temp, weather)
-        this.setData({
-          nowTemp: temp + '°',
-          nowWeather: weather,
-          nowWeatherBackground: '/images/' + weatherCode + '-bg.png'
-        })
-        wx.setNavigationBarColor({
-          frontColor: '#000000',
-          backgroundColor: weatherColorMap[weatherCode],
-        })
+        this.setNow(result)
+        this.setHourlyWeather(result)
       },
       complete: ()=>{
         callback && callback()
       }
+    })
+  },
+  setNow(result){
+    let temp = result.now.tmp
+    let weather = result.now.cond_txt
+    let weatherCode = result.now.cond_code
+    console.log(temp, weather)
+    this.setData({
+      nowTemp: temp + '°',
+      nowWeather: weather,
+      nowWeatherBackground: '/images/' + weatherCode + '-bg.png'
+    })
+    wx.setNavigationBarColor({
+      frontColor: '#000000',
+      backgroundColor: weatherColorMap[weatherCode],
+    })
+  },
+  setHourlyWeather(result){
+    let nowHour = new Date().getHours()
+    let hourlyWeather = []
+    for (let i = 0; i < 8; i += 1) {
+      hourlyWeather.push({
+        time: (i * 3 + nowHour) % 24 + '时',
+        iconPath: '/images/' + result.now.cond_code + '-icon.png',
+        temp: result.now.tmp + '°'
+      })
+    }
+    hourlyWeather[0].time = '现在'
+    this.setData({
+      hourlyWeather: hourlyWeather
     })
   }
 })
