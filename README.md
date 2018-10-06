@@ -61,7 +61,7 @@ Copyright (c) 2018： [windmill0503](https://github.com/windmill0503)
 
 #### CityWeather
 
-A weather query applet in a minimalist style of the world's major citie.
+A weather Mini Program Project  in a minimalist style of the world's major citie.
 
 #### Languages
 
