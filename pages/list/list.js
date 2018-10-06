@@ -1,8 +1,12 @@
 Page({
   data: {
-    weekWeather: [1, 2, 3, 4, 5, 6, 7]
+    weekWeather: [],
+    city: "上海市"
   },
-  onLoad() {
+  onLoad(options) {
+    this.setData({
+      city: options.city
+    })
     this.getWeekWeather()
   },
   onPullDownRefresh() {
@@ -12,13 +16,13 @@ Page({
   },
   getWeekWeather(callback) {
     wx.request({
+      // HeWeather free api
       url: 'https://free-api.heweather.com/s6/weather/forecast',
       data: {
-        location: 'shanghai',
+        location: this.data.city,
         key: '11e895a6b3854f0fb49508eea65df6ca'
       },
       success: res => {
-        //console.log(res)
         let result = res.data.HeWeather6["0"]
         this.setWeekWeather(result)
       },
@@ -29,10 +33,10 @@ Page({
   },
   setWeekWeather(result) {
     let weekWeather = []
+
+    // HeWeather free api 只能到三天
     for (let i = 0; i < 3; i++) {
       let dayWeather = result.daily_forecast[i].cond_txt_d + '转' + result.daily_forecast[i].cond_txt_n
-      //let date = new Date()
-      //date.setDate(date.getDate() + i)
       weekWeather.push({
         day: dayWeather,
         date: result.daily_forecast[i].date,
@@ -41,6 +45,8 @@ Page({
       })
     }
     weekWeather[0].date = '今天'
+    weekWeather[1].date = '明天'
+    weekWeather[2].date = '后天'
     this.setData({
       weekWeather
     })

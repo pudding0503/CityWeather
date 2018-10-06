@@ -22,28 +22,30 @@ macOS v1.02.1809260
 
 ### 小程序截图
 
-等待添加
+![City Weather Screenshot](http://img.nousbuild.top/cityweather/github/cityweather-github-screenshot.jpg)
 
 
 
 #### 如何使用 ?
 
 1. 获取代码文件到本地，保留根文件夹；
-2. 打开微信开发工具，点击 `+` 添加跟文件夹与小程序中；
+2. 打开微信开发工具，点击 `+` 添加跟文件夹于小程序中；
 3. 本代码限制了 AppID 的值，可在项目中修改 `project.config.json` 文件添加 AppID；
-4. 本例天气API使用有和风天气提供的免费API，每天免费1000次请求，如遇到获取 `json` 数据错误，请次日再来尝试，亦或是使用自己的天气API。
+4. 本例天气API使用有和风天气提供的免费API，每天免费1000次请求，如遇到获取 `json` 数据错误，请次日再来尝试，亦或是使用自己的天气API；
+5. 本例中位置API使用腾讯位置服务SDK，可在 [此处](https://lbs.qq.com/) 注册。
 
 #### 特点
 
-After the app runs, you can refer to the following features
+当你运行此小程序时，你能够获得以下特性：
 
-- wait
-- wait
-- wait
+- 略去配置城市步骤，直接获取地址查看你所在城市的天气状况；
+- 能够获取当前的风向和风速；
+- 能够查看未来24小时的天气及气温变化；
+- 能够查看未来7天的天气变化及气温变化。
 
 #### 补充
 
-允许用于非商业性用途。
+允许用于**非商业性**用途。
 
 #### 版权
 
@@ -71,7 +73,7 @@ macOS v1.02.1809260
 
 ### Screenshot
 
-等待添加
+![City Weather Screenshot](http://img.nousbuild.top/cityweather/github/cityweather-github-screenshot.jpg)
 
 
 
@@ -81,17 +83,19 @@ macOS v1.02.1809260
 2. Open Wechat Wevelper Tool, and click `+` to add this folder;
 3. Limited functionality when no AppId. But you can add it in ``project.config.json``
 4. In this case, the weather API uses a free API provided by Windy Weather, which is free of 1000 requests per day. If you encounter a json data error, please try again the next day, or use your own weather API.
+5. In this example, the Location API uses the Tencent Location Services SDK, which can be registered [here](https://lbs.qq.com/).
 
 #### Feature
-After the app runs, you can refer to the following features
+When you run this Mini Program Project, you get the following features:
 
-+ wait
-+ wait
-+ wait
++ You don't have to configure the city steps to get the address directly to see the weather conditions in your city.
++ Ability to view current wind direction and wind speed.
++ Ability to view weather and temperature changes over the next 24 hours.
++ Ability to view weather changes and temperature changes over the next 7 days.
 
 #### Supplement
 
-Allowed for non-commercial use.
+Allowed for **non-commercial** use.
 
 #### Legal
 

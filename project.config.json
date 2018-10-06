@@ -1,5 +1,8 @@
 {
-	"description": "项目配置文件。",
+	"description": "Project configuration file",
+	"packOptions": {
+		"ignore": []
+	},
 	"setting": {
 		"urlCheck": false,
 		"es6": true,
@@ -8,9 +11,13 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "1.9.93",
-	"appid": "touristappid",
-	"projectname": "weather",
+	"libVersion": "2.3.0",
+	"appid": "wxcf243e443d7186b5",
+	"projectname": "CityWeather",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
 	"condition": {
 		"search": {
 			"current": -1,

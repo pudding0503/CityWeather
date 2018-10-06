@@ -1,3 +1,4 @@
+// 天气状态代码对应顶部颜色
 const weatherColorMap = {
   '100': '#C4EFFF', //晴
   '101': '#DAEFF8', //多云
@@ -68,6 +69,13 @@ const weatherColorMap = {
   '902': '#8664FF' //未知
 }
 
+// 引入腾讯位置SDK
+const QQMapWX = require('../../libs/qqmap-wx-jssdk.js')
+
+const UNPROMPTED = 0
+const UNAUTHORIZED = 1
+const AUTHORIZED = 2
+
 Page({
   data: {
     nowTemp: '0°',
@@ -75,25 +83,51 @@ Page({
     nowWeatherBackground: "",
     hourlyWeather: [],
     todayTemp: "",
-    todayDate: ""
+    todayDate: "",
+    city: "上海市",
+    locationAuthType: UNPROMPTED
   },
   onLoad() {
-    this.getNow()
+    // 腾讯位置SDK请求，申请地址: https://lbs.qq.com/
+    this.qqmapsdk = new QQMapWX({
+      key: 'MVOBZ-MPDWI-PEVGJ-5RDZT-SSPKZ-JLFSU'
+    })
+    wx.getSetting({
+      success: res=>{
+        let auth = res.authSetting['scope.userLocation']
+        this.setData({
+          locationAuthType: auth ? AUTHORIZED
+            : (auth === false) ? UNAUTHORIZED : UNPROMPTED
+        })
+
+        if (auth)
+          this.getCityAndWeather()
+        else
+          this.getNow() //使用默认城市上海
+      },
+      fail: ()=> {
+        this.getNow() //使用默认城市上海
+      }
+    })
   },
+
+  // 下拉刷新
   onPullDownRefresh() {
     this.getNow(() => {
       wx.stopPullDownRefresh()
     })
   },
+
+  // HeWeather Api 当前天气
   getNow(callback) {
     wx.request({
+      // HeWeather Api
       url: 'https://free-api.heweather.com/s6/weather/now',
       data: {
-        location: 'shanghai',
+        location: this.data.city,
         key: '11e895a6b3854f0fb49508eea65df6ca'
       },
       success: res => {
-        console.log(res)
         let result = res.data.HeWeather6["0"]
         this.setNow(result)
         this.setHourlyWeather(result)
@@ -104,11 +138,12 @@ Page({
       }
     })
   },
+
+  // 现在天气预报
   setNow(result){
     let temp = result.now.tmp
     let weather = result.now.cond_txt
     let weatherCode = result.now.cond_code
-    console.log(temp, weather)
     this.setData({
       nowTemp: temp + '°',
       nowWeather: weather,
@@ -119,6 +154,8 @@ Page({
       backgroundColor: weatherColorMap[weatherCode],
     })
   },
+
+  // 小时天气预报
   setHourlyWeather(result){
     let nowHour = new Date().getHours()
     let hourlyWeather = []
@@ -134,16 +171,54 @@ Page({
       hourlyWeather: hourlyWeather
     })
   },
+
+  // 最新数据 & 风速
   setToday(result) {
     let date = new Date()
     this.setData({
       todayWind: `${result.now.wind_dir} 风速 ${result.now.wind_spd} km/h`,
-      todayDate: `最新 :${result.update.loc}`
+      todayDate: `最新: ${result.update.loc}`
     })
   },
   onTapDayWeather() {
     wx.navigateTo({
-      url: '/pages/list/list',
+      // 传递参数到 list
+      url: '/pages/list/list?city=' + this.data.city,
+    })
+  },
+  onTapLocation() {
+    this.getCityAndWeather()
+  },
+  getCityAndWeather(){
+    wx.getLocation({
+      success: res => {
+        this.setData({
+          locationAuthType: AUTHORIZED,
+        })
+        this.qqmapsdk.reverseGeocoder({
+          location: {
+            latitude: res.latitude,
+            longitude: res.longitude
+          },
+          success: res => {
+            let city = res.result.address_component.city
+            this.setData({
+              city: city,
+              locationTipsText: ""
+            })
+            this.getNow()
+          },
+          fail: res => {
+            console.log("城市位置请求失败")
+          }
+        })
+      },
+      // 用户拒绝获取位置信息权限
+      fail: ()=> {
+        this.setData({
+          locationAuthType: UNAUTHORIZED,
+        })
+      }
     })
   }
 })
