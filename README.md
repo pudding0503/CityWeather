@@ -80,7 +80,7 @@ macOS v1.02.1809260
 #### How to Use ?
 
 1. Clone the code file to the local, keep the  folder `CityWeather`
-2. Open Wechat Wevelper Tool, and click `+` to add this folder;
+2. Open Wechat Wevelper Tool, and click `+` to add this folder.
 3. Limited functionality when no AppId. But you can add it in ``project.config.json``
 4. In this case, the weather API uses a free API provided by Windy Weather, which is free of 1000 requests per day. If you encounter a json data error, please try again the next day, or use your own weather API.
 5. In this example, the Location API uses the Tencent Location Services SDK, which can be registered [here](https://lbs.qq.com/).
