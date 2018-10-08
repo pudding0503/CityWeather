@@ -12,7 +12,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.3.0",
-	"appid": "wxcf243e443d7186b5",
+	"appid": "touristappid",
 	"projectname": "CityWeather",
 	"debugOptions": {
 		"hidedInDevtools": []
