@@ -220,5 +220,14 @@ Page({
         })
       }
     })
+  },
+  // 转发与分享
+  onShareAppMessage: function (res) {
+    // 来自菜单转发按钮
+    console.log("来自菜单转发按钮")
+    return {
+      title: this.data.city + '当前天气',
+      path: '/pages/index/index?city=' + this.data.city
+    }
   }
 })

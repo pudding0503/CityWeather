@@ -54,5 +54,20 @@ Page({
       frontColor: '#000000',
       backgroundColor: '#ECF7FB'
   })
+  },
+  // 转发与分享
+  onShareAppMessage: function (res) {
+    if (res.from === 'button') {
+      // 来自页面内转发按钮
+      console.log("来自页面内转发按钮")
+    }
+    else {
+      // 来自菜单转发按钮
+      console.log("来自菜单转发按钮")
+    }
+    return {
+      title: this.data.city + '未来7天天气',
+      path: '/pages/list/list?city=' + this.data.city
+    }
   }
 })

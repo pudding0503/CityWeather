@@ -2,6 +2,8 @@
 ![Style Flat](https://img.shields.io/badge/style-flat-green.svg?longCache=true&style=flat)
 ![Build Status](https://travis-ci.org/typelift/Swiftz.svg?branch=master)
 
+<center>[简体中文](#中文) & [English](#en)</center>
+
 ![City Weather Banner ZH](http://img.nousbuild.top/cityweather/github/cityweather-github-banner-zh.jpg)
 
 ## 中文
@@ -28,7 +30,7 @@ macOS v1.02.1809260
 
 #### 如何使用 ?
 
-1. 获取代码文件到本地，保留根文件夹；
+1. 获取某个分支的代码文件到本地，保留根文件夹；
 2. 打开微信开发工具，点击 `+` 添加跟文件夹于小程序中；
 3. 本代码限制了 AppID 的值，可在项目中修改 `project.config.json` 文件添加 AppID；
 4. 本例天气API使用有和风天气提供的免费API，每天免费1000次请求，如遇到获取 `json` 数据错误，请次日再来尝试，亦或是使用自己的天气API；
@@ -42,6 +44,12 @@ macOS v1.02.1809260
 - 能够获取当前的风向和风速；
 - 能够查看未来24小时的天气及气温变化；
 - 能够查看未来7天的天气变化及气温变化。
+
+#### 历史版本
+
+`v1.1.1` 包括 `v1.0.0` 全部功能，并增加当前天气分享以及7天天气分享，微调UI。
+
+`v1.0.0` 包括当前天气、24小时预报以及7天天气预报功能。 
 
 #### 补充
 
@@ -82,7 +90,7 @@ macOS v1.02.1809260
 1. Clone the code file to the local, keep the  folder `CityWeather`
 2. Open Wechat Wevelper Tool, and click `+` to add this folder.
 3. Limited functionality when no AppId. But you can add it in ``project.config.json``
-4. In this case, the weather API uses a free API provided by Windy Weather, which is free of 1000 requests per day. If you encounter a json data error, please try again the next day, or use your own weather API.
+4. In this case, the weather API uses a free API provided by HeWeather, which is free of 1000 requests per day. If you encounter a json data error, please try again the next day, or use your own weather API.
 5. In this example, the Location API uses the Tencent Location Services SDK, which can be registered [here](https://lbs.qq.com/).
 
 #### Feature
@@ -92,6 +100,12 @@ When you run this Mini Program Project, you get the following features:
 + Ability to view current wind direction and wind speed.
 + Ability to view weather and temperature changes over the next 24 hours.
 + Ability to view weather changes and temperature changes over the next 7 days.
+
+#### Previous version
+
+`v1.1.1` Including `v1.0.0` all features, and increase the current weather sharing and 7-day weather sharing, fine-tuning the UI.
+
+`v1.0.0` Includes current weather, 24-hour forecast and 7-day weather forecast. 
 
 #### Supplement
 
