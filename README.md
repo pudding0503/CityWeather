@@ -30,7 +30,7 @@ macOS v1.02.1809260
 
 #### 如何使用 ?
 
-1. 获取某个分支的代码文件到本地，保留根文件夹；
+1. 获取某个分支的代码文件到本地，保留根文件夹 `CityWeather`；
 2. 打开微信开发工具，点击 `+` 添加跟文件夹于小程序中；
 3. 本代码限制了 AppID 的值，可在项目中修改 `project.config.json` 文件添加 AppID；
 4. 本例天气API使用有和风天气提供的免费API，每天免费1000次请求，如遇到获取 `json` 数据错误，请次日再来尝试，亦或是使用自己的天气API；
@@ -87,7 +87,7 @@ macOS v1.02.1809260
 
 #### How to Use ?
 
-1. Clone the code file to the local, keep the  folder `CityWeather`
+1. Get the code file of a branch to the local, keep the root folder `CityWeather`
 2. Open Wechat Wevelper Tool, and click `+` to add this folder.
 3. Limited functionality when no AppId. But you can add it in ``project.config.json``
 4. In this case, the weather API uses a free API provided by HeWeather, which is free of 1000 requests per day. If you encounter a json data error, please try again the next day, or use your own weather API.
