@@ -2,7 +2,7 @@
 ![Style Flat](https://img.shields.io/badge/style-flat-green.svg?longCache=true&style=flat)
 ![Build Status](https://travis-ci.org/typelift/Swiftz.svg?branch=master)
 
-<center>[简体中文](#中文) & [English](#en)</center>
+[简体中文](#中文) & [English](#en)
 
 ![City Weather Banner ZH](http://img.nousbuild.top/cityweather/github/cityweather-github-banner-zh.jpg)
 
