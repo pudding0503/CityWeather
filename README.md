@@ -24,7 +24,7 @@ macOS v1.02.1809260
 
 ### 小程序截图
 
-![City Weather Screenshot](http://img.nousbuild.top/cityweather/github/cityweather-github-screenshot.jpg)
+![City Weather Screenshot](https://img-1254235857.cos.ap-beijing.myqcloud.com/cityweather/github/cityweather-github-screenshot-2.jpg)
 
 
 
@@ -59,6 +59,8 @@ macOS v1.02.1809260
 
 Copyright (c) 2018： [windmill0503](https://github.com/windmill0503)
 
+Copyright (c) 2018： [Udacity](https://cn.udacity.com/)
+
  
 
 ![City Weather Banner ZH](http://img.nousbuild.top/cityweather/github/cityweather-github-banner-en.jpg)
@@ -81,7 +83,7 @@ macOS v1.02.1809260
 
 ### Screenshot
 
-![City Weather Screenshot](http://img.nousbuild.top/cityweather/github/cityweather-github-screenshot.jpg)
+![City Weather Screenshot](https://img-1254235857.cos.ap-beijing.myqcloud.com/cityweather/github/cityweather-github-screenshot-2.jpg)
 
 
 
@@ -114,3 +116,5 @@ Allowed for **non-commercial** use.
 #### Legal
 
 Copyright (c) 2018： [windmill0503](https://github.com/windmill0503)
+
+Copyright (c) 2018： [Udacity](https://cn.udacity.com/)
