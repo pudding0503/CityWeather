@@ -20,11 +20,11 @@ JavaScript, wxml, wxss
 
 #### 微信开发工具版本
 
-macOS v1.02.1809260
+macOS v1.02.1812271
 
 ### 小程序截图
 
-![City Weather Screenshot](https://img-1254235857.cos.ap-beijing.myqcloud.com/cityweather/github/cityweather-github-screenshot-2.jpg)
+![City Weather Screenshot](http://img.nousbuild.top/cityweather/github/cityweather-github-screenshot-2.jpg)
 
 
 
@@ -47,6 +47,8 @@ macOS v1.02.1809260
 
 #### 历史版本
 
+`v1.2.0` 包括 `v1.1.1`全部功能，并适配最新小程序规范，重新设计部分天气背景。
+
 `v1.1.1` 包括 `v1.0.0` 全部功能，并增加当前天气分享以及7天天气分享，微调UI。
 
 `v1.0.0` 包括当前天气、24小时预报以及7天天气预报功能。 
@@ -58,8 +60,6 @@ macOS v1.02.1809260
 #### 版权
 
 Copyright (c) 2018： [windmill0503](https://github.com/windmill0503)
-
-Copyright (c) 2018： [Udacity](https://cn.udacity.com/)
 
  
 
@@ -79,11 +79,11 @@ JavaScript, wxml, wxss
 
 #### WeChat Developer Tool Version
 
-macOS v1.02.1809260
+macOS v1.02.1812271
 
 ### Screenshot
 
-![City Weather Screenshot](https://img-1254235857.cos.ap-beijing.myqcloud.com/cityweather/github/cityweather-github-screenshot-2.jpg)
+![City Weather Screenshot](http://img.nousbuild.top/cityweather/github/cityweather-github-screenshot-2.jpg)
 
 
 
@@ -105,6 +105,8 @@ When you run this Mini Program Project, you get the following features:
 
 #### Previous version
 
+`v1.2.0` Including `v1.1.1` all features, and adapts to the latest applet specification to redesign some weather backgrounds.
+
 `v1.1.1` Including `v1.0.0` all features, and increase the current weather sharing and 7-day weather sharing, fine-tuning the UI.
 
 `v1.0.0` Includes current weather, 24-hour forecast and 7-day weather forecast. 
@@ -116,5 +118,3 @@ Allowed for **non-commercial** use.
 #### Legal
 
 Copyright (c) 2018： [windmill0503](https://github.com/windmill0503)
-
-Copyright (c) 2018： [Udacity](https://cn.udacity.com/)
