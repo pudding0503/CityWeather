@@ -7,6 +7,12 @@ Page({
     this.setData({
       city: options.city
     })
+
+    wx.setNavigationBarColor({
+      frontColor: '#000000',
+      backgroundColor: '#F0F0F0'
+    })
+
     this.getWeekWeather()
   },
   onPullDownRefresh() {
@@ -50,10 +56,6 @@ Page({
     this.setData({
       weekWeather
     })
-    wx.setNavigationBarColor({
-      frontColor: '#000000',
-      backgroundColor: '#ECF7FB'
-  })
   },
   // 转发与分享
   onShareAppMessage: function (res) {

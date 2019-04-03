@@ -4,9 +4,9 @@
       <image class="location-icon" src="/images/location-icon.png"></image>
       <view class="location-text">{{city}}</view>
     </view>
-    <view wx:if="{{locationAuthType==0}}"class="location-tips">点击获取当前位置</view>
-    <view wx:if="{{locationAuthType==1}}"class="location-tips">点击开启位置权限</view>
-    <view wx:if="{{locationAuthType==2}}"class="location-tips"></view>
+    <view wx:if="{{locationAuthType==0}}" class="location-tips">点击获取当前位置</view>
+    <view wx:if="{{locationAuthType==1}}" class="location-tips">点击开启位置权限</view>
+    <view wx:if="{{locationAuthType==2}}" class="location-tips"></view>
   </button>
   <view class="temp">{{nowTemp}}</view>
   <view class="weather">{{nowWeather}}</view>
@@ -22,13 +22,13 @@
   <image class="timetips-icon" src="/images/time-icon.png"></image>
   <view class="timetips-text">未来24小时天气预测</view>
 </view>
- 
+
 <scroll-view scroll-x>
   <view class='forecast-list'>
     <view class='forecast-item' wx:for="{{hourlyWeather}}">
-      <view class= 'forecast-time'>{{item.time}}</view>
-      <image class= 'forecast-weather' src='{{item.iconPath}}'></image>
-      <view class= 'forecast-temp'>{{item.temp}}</view>
+      <view class='forecast-time'>{{item.time}}</view>
+      <image class='forecast-weather' src='{{item.iconPath}}'></image>
+      <view class='forecast-temp'>{{item.temp}}</view>
     </view>
   </view>
 </scroll-view>

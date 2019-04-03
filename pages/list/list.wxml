@@ -1,8 +1,27 @@
-<view class='date-item' wx:for='{{weekWeather}}'>
+<view class="location">
+  <image class="location-icon" src="/images/location-icon.png"></image>
+  <view class="location-text">{{city}}</view>
+</view>
+
+<image class="info-png rotateAn" src='/images/info.png' bindtap='onTapAbout'></image>
+
+<!--<view class='date-item' wx:for='{{weekWeather}}'>
   <view class='date-wrapper'>
     <view class='day'>{{item.day}}</view>
     <view class='date'>{{item.date}}</view>
   </view>
   <view class='temp'>{{item.temp}}</view>
   <image class='weather-icon' src='{{item.iconPath}}'></image>
+</view>-->
+
+<view class="unlogin-card" wx:for='{{weekWeather}}'>
+  <view class="unlogin-head">
+    <image class='user-head' src='{{item.iconPath}}'></image>
+  </view>
+  <view class="unlogin-info">
+    <view class="unlogin-text">{{item.day}} {{item.temp}}</view>
+    <view class="unlogin-tips">{{item.date}}</view>
+  </view>
 </view>
+
+<view class='end-tips'></view>

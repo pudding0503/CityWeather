@@ -47,6 +47,16 @@ macOS v1.02.1812271
 
 #### 历史版本
 
+##### 2.x版
+
+`v2.0.0` 重新设计了部分页面。
+
+##### 1.x版
+
+`v1.2.3` 包括 `v1.2.2`全部功能，微调UI及更改7天天气预报页面背景颜色。
+
+`v1.2.2` 包括 `v1.2.0`全部功能，优化更新提示，新增降水概率和相对湿度数据。
+
 `v1.2.0` 包括 `v1.1.1`全部功能，并适配最新小程序规范，重新设计部分天气背景。
 
 `v1.1.1` 包括 `v1.0.0` 全部功能，并增加当前天气分享以及7天天气分享，微调UI。
@@ -104,6 +114,16 @@ When you run this Mini Program Project, you get the following features:
 + Ability to view weather changes and temperature changes over the next 7 days.
 
 #### Previous version
+
+##### 2.x Release
+
+`v2.0.0` Redesign some UI.
+
+##### 1.x Release
+
+`v1.2.3` Including `v1.2.2` all features, and adjust the UI and background color.
+
+`v1.2.2` Including `v1.2.0` all features, and optimize update tips, add precipitation probability and relative humidity data.
 
 `v1.2.0` Including `v1.1.1` all features, and adapts to the latest applet specification to redesign some weather backgrounds.
 
