@@ -11,8 +11,9 @@
     "enablePullDownRefresh": true
   },
   "permission": {
-    "scope.userLocation":{
+    "scope.userLocation": {
       "desc": "您的位置将用于获取当前位置的天气"
     }
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

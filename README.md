@@ -25,7 +25,7 @@ macOS v1.02.1812271
 
 ### 小程序截图
 
-![City Weather Screenshot](http://img.nousbuild.top/cityweather/github/cityweather-github-screenshot-2.jpg)
+![City Weather Screenshot](http://img.nousbuild.top/cityweather/github/cityweather-github-banner.jpg)
 
 
 
@@ -94,7 +94,7 @@ macOS v1.02.1812271
 
 ### Screenshot
 
-![City Weather Screenshot](http://img.nousbuild.top/cityweather/github/cityweather-github-screenshot-2.jpg)
+![City Weather Screenshot](http://img.nousbuild.top/cityweather/github/cityweather-github-banner.jpg)
 
 
 
