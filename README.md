@@ -15,14 +15,6 @@
 
 一个简约风格的世界主要城市的天气查询小程序。
 
-#### 开发语言
-
-JavaScript, wxml, wxss
-
-#### 微信开发工具版本
-
-macOS v1.02.1812271
-
 ### 小程序截图
 
 ![City Weather Screenshot](http://img.nousbuild.top/cityweather/github/cityweather-github-banner.jpg)
@@ -64,13 +56,9 @@ macOS v1.02.1812271
 
 `v1.0.0` 包括当前天气、24小时预报以及7天天气预报功能。 
 
-#### 补充
-
-允许用于**非商业性**用途。
-
 #### 版权
 
-Copyright (c) 2018： [windmill0503](https://github.com/windmill0503)
+Apache-2.0 License
 
  
 
@@ -83,14 +71,6 @@ Copyright (c) 2018： [windmill0503](https://github.com/windmill0503)
 #### CityWeather
 
 A weather Mini Program Project  in a minimalist style of the world's major citie.
-
-#### Languages
-
-JavaScript, wxml, wxss
-
-#### WeChat Developer Tool Version
-
-macOS v1.02.1812271
 
 ### Screenshot
 
@@ -132,10 +112,6 @@ When you run this Mini Program Project, you get the following features:
 
 `v1.0.0` Includes current weather, 24-hour forecast and 7-day weather forecast. 
 
-#### Supplement
+#### License
 
-Allowed for **non-commercial** use.
-
-#### Legal
-
-Copyright (c) 2018： [windmill0503](https://github.com/windmill0503)
+Apache-2.0 License
