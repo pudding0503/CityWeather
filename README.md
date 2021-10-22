@@ -1,7 +1,4 @@
 # City Weather 
-![Style Flat](https://img.shields.io/badge/style-flat-green.svg?longCache=true&style=flat)
-![Build Status](https://travis-ci.org/typelift/Swiftz.svg?branch=master)
-[![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
 
 [简体中文](#中文) & [English](#en)
 
