@@ -1,22 +1,18 @@
-# City Weather 
+![City Weather Banner ZH](http://img.nousbuild.top/cityweather/github/cityweather-github-banner-zh.jpg) 
 
-[简体中文](#中文) & [English](#en)
+<p align="center">
+  <img src="https://img.shields.io/github/v/release/windmill0503/CityWeather?label=version" />
+  <a href="https://github.com/windmill0503/CityWeather/blob/master/LICENSE">
+  	<img alt="License" src="https://img.shields.io/github/license/windmill0503/CityWeather.svg" />
+  </a>
+  <a href="https://github.com/windmill0503/CityWeather/issues">
+  	<img alt="Issues" src="https://img.shields.io/github/issues/windmill0503/CityWeather?color=F48D73" />
+  </a>
+</p>
 
-![City Weather Banner ZH](http://img.nousbuild.top/cityweather/github/cityweather-github-banner-zh.jpg)
-
-## 中文
-
-### 小程序信息
-
-#### 城市天气 (City Weather)
+## 城市天气微信小程序
 
 一个简约风格的世界主要城市的天气查询小程序。
-
-### 小程序截图
-
-![City Weather Screenshot](http://img.nousbuild.top/cityweather/github/cityweather-github-banner.jpg)
-
-
 
 #### 如何使用 ?
 
@@ -35,80 +31,12 @@
 - 能够查看未来24小时的天气及气温变化；
 - 能够查看未来7天的天气变化及气温变化。
 
-#### 历史版本
+#### 成品
 
-##### 2.x版
-
-`v2.0.0` 重新设计了部分页面。
-
-##### 1.x版
-
-`v1.2.3` 包括 `v1.2.2`全部功能，微调UI及更改7天天气预报页面背景颜色。
-
-`v1.2.2` 包括 `v1.2.0`全部功能，优化更新提示，新增降水概率和相对湿度数据。
-
-`v1.2.0` 包括 `v1.1.1`全部功能，并适配最新小程序规范，重新设计部分天气背景。
-
-`v1.1.1` 包括 `v1.0.0` 全部功能，并增加当前天气分享以及7天天气分享，微调UI。
-
-`v1.0.0` 包括当前天气、24小时预报以及7天天气预报功能。 
-
-#### 版权
-
-Apache-2.0 License
-
- 
-
-![City Weather Banner ZH](http://img.nousbuild.top/cityweather/github/cityweather-github-banner-en.jpg)
-
-## EN
-
-### Mini Program Project info
-
-#### CityWeather
-
-A weather Mini Program Project  in a minimalist style of the world's major citie.
-
-### Screenshot
+由于小程序测试Key的限制，有些依赖云端的功能并为放入，以免报错。但是你可以使用微信或QQ扫描相应的小程序码，查看完整的小程序。
 
 ![City Weather Screenshot](http://img.nousbuild.top/cityweather/github/cityweather-github-banner.jpg)
 
+#### 许可
 
-
-#### How to Use ?
-
-1. Get the code file of a branch to the local, keep the root folder `CityWeather`
-2. Open Wechat Wevelper Tool, and click `+` to add this folder.
-3. Limited functionality when no AppId. But you can add it in ``project.config.json``
-4. In this case, the weather API uses a free API provided by HeWeather, which is free of 1000 requests per day. If you encounter a json data error, please try again the next day, or use your own weather API.
-5. In this example, the Location API uses the Tencent Location Services SDK, which can be registered [here](https://lbs.qq.com/).
-
-#### Feature
-When you run this Mini Program Project, you get the following features:
-
-+ You don't have to configure the city steps to get the address directly to see the weather conditions in your city.
-+ Ability to view current wind direction and wind speed.
-+ Ability to view weather and temperature changes over the next 24 hours.
-+ Ability to view weather changes and temperature changes over the next 7 days.
-
-#### Previous version
-
-##### 2.x Release
-
-`v2.0.0` Redesign some UI.
-
-##### 1.x Release
-
-`v1.2.3` Including `v1.2.2` all features, and adjust the UI and background color.
-
-`v1.2.2` Including `v1.2.0` all features, and optimize update tips, add precipitation probability and relative humidity data.
-
-`v1.2.0` Including `v1.1.1` all features, and adapts to the latest applet specification to redesign some weather backgrounds.
-
-`v1.1.1` Including `v1.0.0` all features, and increase the current weather sharing and 7-day weather sharing, fine-tuning the UI.
-
-`v1.0.0` Includes current weather, 24-hour forecast and 7-day weather forecast. 
-
-#### License
-
-Apache-2.0 License
+[Apache-2.0 License](https://github.com/windmill0503/CityWeather/blob/master/LICENSE)

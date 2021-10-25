@@ -3,6 +3,7 @@ Page({
     weekWeather: [],
     city: "上海市"
   },
+
   onLoad(options) {
     this.setData({
       city: options.city
@@ -15,11 +16,13 @@ Page({
 
     this.getWeekWeather()
   },
+
   onPullDownRefresh() {
     this.getWeekWeather(() => {
       wx.stopPullDownRefresh()
     })
   },
+
   getWeekWeather(callback) {
     wx.request({
       // HeWeather free api
@@ -32,14 +35,14 @@ Page({
         let result = res.data.HeWeather6["0"]
         this.setWeekWeather(result)
       },
-      complete: ()=>{
+      complete: () => {
         callback && callback()
       }
     })
   },
+
   setWeekWeather(result) {
     let weekWeather = []
-
     // HeWeather free api 只能到三天
     for (let i = 0; i < 3; i++) {
       let dayWeather = result.daily_forecast[i].cond_txt_d + '转' + result.daily_forecast[i].cond_txt_n
@@ -57,13 +60,20 @@ Page({
       weekWeather
     })
   },
+
+  // 设置
+  onTapAbout() {
+    wx.showToast({
+      title: '这是个设置按钮',
+    })
+  },
+
   // 转发与分享
   onShareAppMessage: function (res) {
     if (res.from === 'button') {
       // 来自页面内转发按钮
       console.log("来自页面内转发按钮")
-    }
-    else {
+    } else {
       // 来自菜单转发按钮
       console.log("来自菜单转发按钮")
     }
