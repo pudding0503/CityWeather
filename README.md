@@ -7,12 +7,12 @@
   <a href="https://github.nousbuild.com/get-cityweather/">
   	<img alt="Minipp" src="https://img.shields.io/badge/Get-Minipp-green.svg" />
   </a>
-  <img src="https://img.shields.io/github/v/release/windmill0503/CityWeather?label=version" />
-  <a href="https://github.com/windmill0503/CityWeather/blob/master/LICENSE">
-  	<img alt="License" src="https://img.shields.io/github/license/windmill0503/CityWeather.svg" />
+  <img src="https://img.shields.io/github/v/release/pudding0503/CityWeather?label=version" />
+  <a href="https://github.com/pudding0503/CityWeather/blob/master/LICENSE">
+  	<img alt="License" src="https://img.shields.io/github/license/pudding0503/CityWeather.svg" />
   </a>
-  <a href="https://github.com/windmill0503/CityWeather/issues">
-  	<img alt="Issues" src="https://img.shields.io/github/issues/windmill0503/CityWeather?color=F48D73" />
+  <a href="https://github.com/pudding0503/CityWeather/issues">
+  	<img alt="Issues" src="https://img.shields.io/github/issues/pudding0503/CityWeather?color=F48D73" />
   </a>
 </p>
 
@@ -84,4 +84,4 @@
 
 ### 7. 版权
 
-[GPL-3.0 License](https://github.com/windmill0503/CityWeather/blob/master/LICENSE)
+[GPL-3.0 License](https://github.com/pudding0503/CityWeather/blob/master/LICENSE)
